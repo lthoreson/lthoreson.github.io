@@ -1,4 +1,4 @@
 <app-nav></app-nav>
 <app-home *ngIf="ui.getView() === views.home"></app-home>
-<app-skills></app-skills>
-<app-projects></app-projects>
+<app-skills *ngIf="[views.home, views.skills].includes(ui.getView())"></app-skills>
+<app-projects *ngIf="[views.home, views.projects].includes(ui.getView())"></app-projects>
