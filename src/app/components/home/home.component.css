@@ -3,16 +3,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .big-name {
     font-family: Josefin Sans, "Helvetica Neue", sans-serif;
     font-weight: 700;
-    font-size: 6rem;
+    font-size: 6rem;;
 }
 
 .artwork {
     width: 500px;
     position: absolute;
     opacity: .5;
+    z-index: -1;
+}
+
+.role {
+    margin: 1rem;
+    font-size: 2rem;
+    color: #dddddd;
 }
