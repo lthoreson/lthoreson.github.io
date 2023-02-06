@@ -1,0 +1,18 @@
+.cover-page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.big-name {
+    font-family: Josefin Sans, "Helvetica Neue", sans-serif;
+    font-weight: 700;
+    font-size: 6rem;
+}
+
+.artwork {
+    width: 500px;
+    position: absolute;
+    opacity: .5;
+}

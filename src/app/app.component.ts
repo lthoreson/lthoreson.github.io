@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Views } from './data/views';
+import { UiService } from './services/ui.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'portfolio';
+  views = Views
+  constructor(public ui: UiService) {}
 }
