@@ -10,6 +10,8 @@ import { ProjectsComponent } from './components/projects/projects.component';
 
 import {MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
+import { ContactComponent } from './components/contact/contact.component';
+import { StoryComponent } from './components/story/story.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import {MatIconModule} from '@angular/material/icon';
     NavComponent,
     HomeComponent,
     SkillsComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    ContactComponent,
+    StoryComponent
   ],
   imports: [
     BrowserModule,
