@@ -13,6 +13,7 @@ body {
     display: flex;
     justify-content: center;
     margin: 1rem;
+    flex-wrap: wrap;
 }
 mat-card {
     margin: 1rem;

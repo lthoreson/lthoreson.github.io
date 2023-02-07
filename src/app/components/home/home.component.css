@@ -9,11 +9,18 @@
 .big-name {
     font-family: Josefin Sans, "Helvetica Neue", sans-serif;
     font-weight: 700;
-    font-size: 6rem;;
+    font-size: 6rem;
+}
+
+@media only screen and (max-width: 700px) {
+    .big-name {
+        font-size: 3rem;
+    }
 }
 
 .artwork {
-    width: 500px;
+    max-width: 500px;
+    width: 100%;
     position: absolute;
     opacity: .5;
     z-index: -1;

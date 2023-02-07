@@ -1,4 +1,12 @@
 <nav>
+    <button mat-icon-button [matMenuTriggerFor]="menu"><mat-icon>menu</mat-icon></button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item (click)="ui.setView(views.home)">Home</button>
+        <button mat-menu-item (click)="ui.setView(views.skills)">Skills</button>
+        <button mat-menu-item (click)="ui.setView(views.projects)">Projects</button>
+        <button mat-menu-item (click)="ui.setView(views.contact)">Contact</button>
+        <button mat-menu-item (click)="ui.setView(views.story)">My Story</button>
+    </mat-menu>
     <ul>
         <li><a href="javascript:void(0)" (click)="ui.setView(views.home)">Home</a></li>
         <li><a href="javascript:void(0)" (click)="ui.setView(views.skills)">Skills</a></li>
