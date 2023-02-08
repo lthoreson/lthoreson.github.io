@@ -1,7 +1,8 @@
 <app-nav></app-nav>
 <app-home *ngIf="ui.getView() === views.home"></app-home>
-<div class="nav-space" *ngIf="[views.projects, views.skills, views.story].includes(ui.getView())"></div>
+<div class="nav-space" *ngIf="![views.home].includes(ui.getView())"></div>
 <app-skills *ngIf="[views.home, views.skills].includes(ui.getView())"></app-skills>
 <app-projects *ngIf="[views.home, views.projects].includes(ui.getView())"></app-projects>
+<app-message *ngIf="[views.contact].includes(ui.getView())"></app-message>
 <app-story *ngIf="[views.story].includes(ui.getView())"></app-story>
 <app-contact></app-contact>

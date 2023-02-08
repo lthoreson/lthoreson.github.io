@@ -9,11 +9,17 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { StoryComponent } from './components/story/story.component';
+import { MessageComponent } from './components/message/message.component';
 
 import {MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatButtonModule} from '@angular/material/button';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import { HttpClientModule } from '@angular/common/http';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -23,7 +29,8 @@ import {MatButtonModule} from '@angular/material/button';
     SkillsComponent,
     ProjectsComponent,
     ContactComponent,
-    StoryComponent
+    StoryComponent,
+    MessageComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +38,13 @@ import {MatButtonModule} from '@angular/material/button';
     MatCardModule,
     MatIconModule,
     MatMenuModule,
-    MatButtonModule
+    MatButtonModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    HttpClientModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
